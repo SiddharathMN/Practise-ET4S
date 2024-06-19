@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Game</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
+    <style>
+        #canvas1 {
+            border: 10px solid whitesmoke;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50%;
+            height: 50%;
+        }
+
+        .questionForm {
+            align-items: center;
+            display: none;
+            font-size: 15px;
+            color: black;
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            background-color: whitesmoke;
+            border: 2px solid #000;
+            padding: 20px;
+            z-index: 10;
+            width: 30%;
+            height: 30%;
+            opacity: 0.6;
+            font-family: 'Sedan SC', serif;
+        }
+    </style>
+</head>
+<body>
+    <audio autoplay src="./Demon Slayer_ Zenitsu Theme  EPIC VERSION (Zenitsu vs Spider).mp3"></audio>
+    <canvas id="canvas1"></canvas>
+
+    <img id="player" src="./items/player.png" style="display: none;">
+    <img id="layer1" src="./forest_layer/layer-1.png" style="display: none;">
+    <img id="layer2" src="./forest_layer/layer-2.png" style="display: none;">
+    <img id="layer3" src="./forest_layer/layer-3.png" style="display: none;">
+    <img id="layer4" src="./forest_layer/layer-4.png" style="display: none;">
+    <img id="layer5" src="./forest_layer/layer-5.png" style="display: none;">
+    <img id="enemy_fly" src="./enemies/enemy_fly.png" style="display: none;">
+    <img id="enemy_plant" src="./enemies/enemy_plant.png" style="display: none;">
+    <img id="enemy_spider_big" src="./enemies/enemy_spider_big.png" style="display: none;">
+    <img id="fire" src="./items/fire.png" style="display: none;">
+    <img id="collisionAnimation" src="./items/boom.png" style="display: none;">
+    <img id="lives" src="./items/lives.png" style="display: none;">
+
+        <form id="questionForm1" class="questionForm">
+            <p id="questionText1">What is the commonly used oxidizer in rocket engines?</p>
+            <label><input type="radio" name="answer" value="dot"> Liquid Hydrogen</label><br>
+            <label><input type="radio" name="answer" value="arrow"> Liquid Oxygen</label><br>
+            <label><input type="radio" name="answer" value="ampersand"> Kerosene</label><br>
+            <label><input type="radio" name="answer" value="asterisk"> Helium</label><br>
+            <button type="submit">Submit</button>
+        </form>
+
+        <form id="questionForm2" class="questionForm">
+            <p id="questionText2">Who is regarded as the moon man of India</p>
+            <label><input type="radio" name="answer" value="email">Dr. Mylswamy Annadurai</label><br>
+            <label><input type="radio" name="answer" value="id"> Dr. Akhilesh Viswanathan</label><br>
+            <label><input type="radio" name="answer" value="name"> Dr. Samuel Binny</label><br>
+            <label><input type="radio" name="answer" value="correct"> Dr. Sachin Gill</label><br>
+            <button type="submit">Submit</button>
+        </form>
+
+        <form id="questionForm3" class="questionForm">
+            <p id="questionText3">Best Ed-tech in the world ?!</p>
+            <label><input type="radio" name="answer" value="mtc1"> Edutech 4 space 😎</label><br>
+            <label><input type="radio" name="answer" value="mtc2"> Edutech 4 space 😎😎</label><br>
+            <label><input type="radio" name="answer" value="mtc3"> Edutech 4 space 😎😎😎</label><br>
+            <label><input type="radio" name="answer" value="mtc4"> Edutech 4 space 😎😎😎😎</label><br>
+            <button type="submit">Submit</button>
+        </form>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
